@@ -2,7 +2,6 @@
 //   #WIDESCREEN-FRAME
 //\*------------------------------------*/
 
-
 //    Creating Intrinsic Ratios for framed content e.g. YouTube
 //
 //    With intrinsic dimensions, a new width triggers a new height
@@ -16,7 +15,6 @@
 //    creating space via a percentage padding, and then position everything over
 //    the top of that. This percentage gives us a 16:9 ratio.
 // 3. Make room for YouTube chrome (static 25px height).
-
 
 .widescreen-frame {
 	position: relative;     // [1]
