@@ -1,0 +1,17 @@
+{
+  "name": "plumpcss-widescreen-frame",
+  "version": "0.1.0",
+  "authors": [
+    "Jon Hurrell <jon@plumpdigital.co.uk>"
+  ],
+  "description": " A simple layout tool to allow items to resize like images.",
+  "main": "_objects.widescreen-frame.scss",
+  "keywords": [
+    "plumpcss",
+    "oocss",
+    "css",
+    "object"
+  ],
+  "license": "MIT",
+  "homepage": "http://www.plumpdigital.co.uk/"
+}

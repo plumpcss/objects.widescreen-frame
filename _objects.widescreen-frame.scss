@@ -1,0 +1,41 @@
+///*------------------------------------*\
+//   #WIDESCREEN-FRAME
+//\*------------------------------------*/
+
+
+//    Creating Intrinsic Ratios for framed content e.g. YouTube
+//
+//    With intrinsic dimensions, a new width triggers a new height
+//    calculation, allowing videos to resize and giving them the ability to
+//    scale the same way images do.
+//    http://alistapart.com/article/creating-intrinsic-ratios-for-video
+//
+// 1. The frame needs positioning context for us to lay our view (child).
+// 2. To create a 16:9 ratio, we must divide 9 by 16 (0.5625 or 56.25%).
+//    Faux-fluid-height technique: simply create the illusion of fluid height by
+//    creating space via a percentage padding, and then position everything over
+//    the top of that. This percentage gives us a 16:9 ratio.
+// 3. Make room for YouTube chrome (static 25px height).
+
+
+.widescreen-frame {
+	position: relative;     // [1]
+	margin-bottom: $spacing-unit;
+	padding-bottom: 56.25%; // [2]
+
+	&--youtube {
+		padding-top: 25px;  // [3]
+	}
+
+	// 1. Break the view out of the typical content flow.
+	// 2. Position the view to the top left of the frames bounding box.
+	// 3. Make the view fill all available space of its frame.
+	//
+	&__view {
+		position: absolute; // [1]
+		top: 0;             // [2]
+		left: 0;            // [2]
+		width: 100%;        // [3]
+		height: 100%;       // [3]
+	}
+}
