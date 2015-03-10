@@ -18,7 +18,7 @@
 
 .widescreen-frame {
 	position: relative;     // [1]
-	margin-bottom: $spacing-unit;
+	margin-bottom: $plump-base-spacing-unit;
 	padding-bottom: 56.25%; // [2]
 
 	&--youtube {
