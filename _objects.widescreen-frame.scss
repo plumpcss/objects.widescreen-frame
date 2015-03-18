@@ -31,7 +31,6 @@ $plump-widescreen-frame-namespace: $plump-namespace !default;
 	// 1. Break the view out of the typical content flow.
 	// 2. Position the view to the top left of the frames bounding box.
 	// 3. Make the view fill all available space of its frame.
-	//
 	&__view {
 		position: absolute; // [1]
 		top: 0;             // [2]
